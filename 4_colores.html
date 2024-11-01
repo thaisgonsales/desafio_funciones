@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 colores</title>
+</head>
+<body>
+
+    <div id="color1" style = "width: 200px; height: 200px ; background-color: blue;"></div>
+    <div id="color2" style = "width: 200px; height: 200px; background-color: red;"></div>
+    <div id="color3" style = "width: 200px; height: 200px; background-color: green;"></div>
+    <div id="color4" style = "width: 200px; height: 200px; background-color: yellow;"></div>
+
+    <script>
+        let color1 = document.getElementById("color1")
+            color2 = document.getElementById("color2")
+            color3 = document.getElementById("color3")
+            color4 = document.getElementById("color4")
+
+
+            function pintarCuadrado (colores, color = "black"){
+                colores.style.backgroundColor = color;
+
+            }
+
+            color1.addEventListener("click", function(){
+                pintarCuadrado(color1, "black");
+            })
+
+            color2.addEventListener("click", function(){
+                pintarCuadrado(color2, "black");
+            })
+
+            color3.addEventListener("click", function(){
+                pintarCuadrado(color3, "black");
+            })
+
+            color4.addEventListener("click", function(){
+                pintarCuadrado(color4, "black");
+            })
+
+
+    </script>
+
+</body>
+</html>
